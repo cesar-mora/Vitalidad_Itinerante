@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vida Sana — Vitalidad Itinerante</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBF7EC;
+    --paper-dim:#F2ECDC;
+    --ink:#22261B;
+    --avocado:#5F7A45;
+    --avocado-dk:#3F5330;
+    --beet:#8C3B4A;
+    --turmeric:#D99A2B;
+    --line:#DAD2B7;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2{font-family:'Fraunces', serif; margin:0;}
+  .mono{font-family:'IBM Plex Mono', monospace; letter-spacing:.03em;}
+
+  .topbar{
+    max-width:760px; margin:0 auto;
+    padding:22px 24px 0;
+  }
+  .back{
+    display:inline-flex; align-items:center; gap:6px;
+    text-decoration:none; color:var(--avocado-dk);
+    font-size:.85rem; font-weight:500;
+  }
+  .back:hover{ color:var(--beet); }
+
+  .cover{
+    max-width:760px; margin:20px auto 0; padding:0 24px;
+  }
+  .cover img{
+    width:100%; height:340px; object-fit:cover;
+    border-radius:4px; display:block;
+  }
+
+  .content{
+    max-width:760px; margin:0 auto; padding:28px 24px 70px;
+  }
+  .locale{
+    font-size:.75rem; color:var(--avocado-dk); font-weight:600;
+    text-transform:uppercase; letter-spacing:.08em;
+  }
+  h1{
+    font-size:clamp(2rem, 4vw, 2.8rem);
+    margin-top:8px; color:var(--ink); line-height:1.05;
+  }
+  .meta-row{
+    display:flex; gap:18px; align-items:center; flex-wrap:wrap;
+    margin-top:14px;
+  }
+  .stamp{
+    font-size:.78rem; border:1px solid var(--turmeric); color:var(--turmeric);
+    padding:3px 10px; border-radius:20px;
+  }
+  .price{ font-size:.85rem; color:var(--beet); }
+
+  .review{
+    margin-top:28px; font-size:1.05rem; line-height:1.75; color:#3f3f30;
+    text-align: justify;
+  }
+  .review p{ margin:0 0 24px; }
+
+  /* foto a ancho completo, para un plato o momento que quieras destacar */
+  .photo-wide{ margin:6px 0 28px; }
+  .photo-wide img{
+    width:100%; height:320px; object-fit:cover; border-radius:4px; display:block;
+  }
+
+  /* par de fotos en dos columnas, para mostrar variedad (ambiente + plato, etc) */
+  .photo-pair{
+    display:grid; grid-template-columns:1fr 1fr; gap:12px;
+    margin:6px 0 28px;
+  }
+  .photo-pair img{
+    width:100%; height:220px; object-fit:cover; border-radius:4px; display:block;
+  }
+  .photo-pair .caption {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 2px;
+    margin-bottom: 0;
+  }
+  @media (max-width:520px){ .photo-pair{ grid-template-columns:1fr; } }
+
+  .caption{
+    font-size:.78rem; color:#8a8a75; text-align:center; margin-top:8px;
+  }
+
+  .video-cta{
+    margin-top:40px; padding:24px;
+    background:var(--paper-dim); border:1px dashed var(--line);
+    border-radius:4px; text-align:center;
+  }
+  .video-cta p{ margin:0 0 14px; font-size:.9rem; color:#5a5a48; }
+  .video-cta a{
+    display:inline-block; text-decoration:none;
+    background:var(--avocado); color:var(--paper);
+    padding:12px 26px; border-radius:2px; font-weight:500; font-size:.95rem;
+  }
+  .video-cta a:hover{ background:var(--avocado-dk); }
+
+  footer{ text-align:center; padding:0 24px 40px; font-size:.78rem; color:#8a8a75; }
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <a class="back" href="../index.html">← Volver al mapa de locales</a>
+  </div>
+
+  <div class="cover">
+    <img src="https://raw.githubusercontent.com/cesar-mora/Vitalidad_Itinerante/main/fotos/vida-sana/IMG-20260629-WA0024.jpg" alt="Vida Sana">
+  </div>
+
+  <div class="content">
+    <span class="locale mono">Lima (Cercado), Lima</span>
+    <h1>Vida Sana</h1>
+
+    <div class="meta-row">
+      <span class="stamp mono">★ 4</span>
+      <span class="price mono">S/ 14 - 20</span>
+    </div>
+
+    <div class="review">
+      <p>
+      Este es un restaurante vegetariano clásico, el cual ofrece desayunos, almuerzos en formato
+      de menú, y platos a la carta; así como combos de cena, sandwiches y otros productos vegetarianos,
+      veganos e integrales. Muchas de sus opciones son aptas para veganos, y la atención es rápida.
+      </p>
+
+      
+      <div class="photo-wide">
+        <img src="https://raw.githubusercontent.com/cesar-mora/Vitalidad_Itinerante/main/fotos/vida-sana/IMG-20260629-WA0026.jpg" alt="Vista">
+        <p class="caption">Ofrece pasteles, galletas y postres, algunos aptos para veganos</p>
+      </div>
+
+      <p>
+      En esta ocasión pedimos el menú ejecutivo que cuesta 20 soles. Como entrada optamos por sopas
+      como la de alcachofa con verduras, así como la sustancia, ambas sin ingredientes de origen animal.
+      Estaban muy sabrosas, consistentes y nutritivas, como las sopas de casa de antaño.
+      </p>
+      
+
+      <div class="photo-pair">
+        <img src="https://raw.githubusercontent.com/cesar-mora/Vitalidad_Itinerante/main/fotos/vida-sana/IMG-20260629-WA0031.jpg" alt="Sopa de alcachofas">
+        <img src="https://raw.githubusercontent.com/cesar-mora/Vitalidad_Itinerante/main/fotos/vida-sana/IMG_20260629_133130.jpg" alt="Sopa sustancia">
+      </div>
+
+      <p>
+      Como segundos optamos por saltado de verduras, y lomo saltado criollo, ambos acompañados
+      con arroz integral, y papas fritas. El sabor era casero y muy bueno, no tan grasoso, y un
+      gran punto a favor es que el seitán en tiras (el lomo) era muy abundante en comparación a 
+      otros lugares que sirven menú.
+      </p>
+      
+      <p>
+      Como bebida, su rica agua de muña, y también un pequeño postre de maní.
+      </p>
+
+
+      <div class="photo-pair" style="margin-bottom: 0;">
+        <img src="https://raw.githubusercontent.com/cesar-mora/Vitalidad_Itinerante/main/fotos/vida-sana/IMG-20260629-WA0023.jpg" alt="Saltado de verduras">
+        <img src="https://raw.githubusercontent.com/cesar-mora/Vitalidad_Itinerante/main/fotos/vida-sana/IMG_20260629_134417.jpg" alt="Lomo saltado">
+      <p class="caption" style="margin-top: -2px;">Abundante seitán como proteína vegetal</p>
+      </div>
+      
+    <div class="video-cta">
+      <p>Grabamos un video narrando nuestra experiencia (disponible pronto):</p>
+      <a href="https://www.instagram.com/" target="_blank">Ver el video en Instagram (pronto) →</a>
+    </div>
+  </div>
+
+  <footer>Una página de "Vitalidad Catering Plant Based"</footer>
+
+</body>
+</html>
